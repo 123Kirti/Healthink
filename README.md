@@ -242,22 +242,12 @@ We welcome contributions! Please follow these steps:
 - Test thoroughly before submitting PRs
 - Update documentation for new features
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
 - **Government of India** for inspiring health scheme digitization
 - **Ethereum Community** for blockchain technology
 - **Open Source Contributors** for amazing tools and libraries
-
-## 📞 Support
-
-For support and questions:
-- 📧 **Email**: [your-email@example.com]
-- 🐛 **Issues**: [GitHub Issues](https://github.com/123Kirti/Healthink/issues)
-- 📖 **Documentation**: Check inline code comments
 
 ---
 
