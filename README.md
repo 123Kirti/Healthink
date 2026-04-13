@@ -304,9 +304,8 @@ This project served as a deep dive into modern web technologies:
 
 ## � Connect & Support
 
-**Project Author:** [Kirti Sachdeva]
-- 📧 **Email**: [sachdevakirti637.com]
-- 🐙 **GitHub**: [https://github.com/123Kirti]
+**Project Author:** Kirti Sachdeva
+- 📧 **Email**: sachdevakirti637.com
 
 ### 🐛 **Issues & Discussions**
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/123Kirti/Healthink/issues)
