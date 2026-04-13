@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthink - Health Scheme Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1 class="logo">🏥 Healthink</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" id="nav-home" class="nav-link active">Home</a></li>
+                <li><a href="#" id="nav-schemes" class="nav-link">Schemes</a></li>
+                <li><a href="#" id="nav-login" class="nav-link nav-auth">Login / Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="status-message" class="status-message"></div>
+
+    <div class="container main-content">
+        <!-- Landing Page Section -->
+        <section class="section" id="landing-page">
+            <div class="landing-hero">
+                <h2>Welcome to Healthink</h2>
+                <p class="tagline">Secure, Transparent, and Accessible Government Health Schemes for Everyone</p>
+            </div>
+
+            <section class="landing-section">
+                <h3>What is Healthink?</h3>
+                <p>Healthink is a comprehensive digital platform designed to bridge the gap between citizens and government health schemes. We provide a secure, transparent, and user-friendly way to access and manage your health benefits.</p>
+            </section>
+
+            <section class="landing-section">
+                <h3>What We Provide</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h4>Health Scheme Management</h4>
+                        <p>Browse and enroll in various government health schemes tailored to your needs with complete eligibility information.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏥</div>
+                        <h4>Hospital Network</h4>
+                        <p>Access a wide network of registered hospitals and healthcare providers offering quality services under government schemes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📄</div>
+                        <h4>Digital Records</h4>
+                        <p>Maintain and access your medical records digitally. Upload prescriptions and medical documents securely.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Data Security</h4>
+                        <p>Your health data is protected with advanced encryption and blockchain technology for maximum privacy and integrity.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✅</div>
+                        <h4>Transparent Auditing</h4>
+                        <p>All records are securely audited and verified using blockchain technology for transparency and accountability.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⏱️</div>
+                        <h4>24/7 Availability</h4>
+                        <p>Access your health schemes and records anytime, anywhere. Our platform works round the clock for your convenience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="landing-section">
+                <h3>How It Helps</h3>
+                <div class="benefits-container">
+                    <div class="benefit">
+                        <h4>For Patients</h4>
+                        <ul>
+                            <li>Easy enrollment in government health schemes</li>
+                            <li>Digital storage of medical records</li>
+                            <li>Track and manage claims</li>
+                            <li>Access quality healthcare at reduced costs</li>
+                        </ul>
+                    </div>
+                    <div class="benefit">
+                        <h4>For Hospitals</h4>
+                        <ul>
+                            <li>Streamlined patient data management</li>
+                            <li>Secure communication with patients</li>
+                            <li>Easy claim processing</li>
+                            <li>Enhanced patient care coordination</li>
+                        </ul>
+                    </div>
+                    <div class="benefit">
+                        <h4>For Administrators</h4>
+                        <ul>
+                            <li>Complete audit trail using blockchain</li>
+                            <li>Transparent scheme management</li>
+                            <li>Real-time monitoring of records</li>
+                            <li>Data-driven decision making</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="landing-section cta-section">
+                <h3>Get Started Today</h3>
+                <p>Join thousands of users accessing healthcare benefits securely and transparently.</p>
+                <button type="button" id="cta-login-btn" class="btn btn-primary btn-large">Login / Sign Up</button>
+            </section>
+        </section>
+
+        <!-- Login Section -->
+        <section class="section hidden" id="login-section">
+            <h3>Sign In</h3>
+            <div class="login-toggle-group">
+                <button type="button" class="toggle-btn active" data-role="patient">Patient</button>
+                <button type="button" class="toggle-btn" data-role="hospital">Hospital</button>
+                <button type="button" class="toggle-btn" data-role="admin">Admin</button>
+            </div>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </section>
+
+        <!-- Patient Dashboard -->
+        <section class="section hidden" id="patient-dashboard">
+            <div class="dashboard-header">
+                <h3>Patient Portal</h3>
+                <button type="button" id="logout-button" class="btn btn-secondary">Logout</button>
+            </div>
+            <div class="info-box">
+                Enter your medical details, choose a hospital, and upload your prescription image for secure review.
+            </div>
+            <form id="patient-form" class="dashboard-form">
+                <div class="form-group">
+                    <label for="patient-hospital">Select Hospital</label>
+                    <select id="patient-hospital" required>
+                        <option value="">Loading hospitals...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="patient-scheme">Select Health Scheme</label>
+                    <select id="patient-scheme">
+                        <option value="">Optional scheme selection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="patient-details">Medical Information</label>
+                    <textarea id="patient-details" rows="6" placeholder="Describe your symptoms, diagnosis, or treatment details"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="patient-prescription">Prescription Photo</label>
+                    <input type="file" id="patient-prescription" accept="image/*">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Medical Record</button>
+            </form>
+            <div class="dashboard-section">
+                <h4>My Previous Records</h4>
+                <div id="patient-data-container" class="data-list">
+                    <div class="info-box">No submitted records yet.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hospital Dashboard -->
+        <section class="section hidden" id="hospital-dashboard">
+            <div class="dashboard-header">
+                <h3>Hospital Portal</h3>
+                <button type="button" id="logout-button-hospital" class="btn btn-secondary">Logout</button>
+            </div>
+            <div class="info-box">
+                Update your hospital profile, publish camp details, and review patient submissions securely.
+            </div>
+            <form id="hospital-profile-form" class="dashboard-form">
+                <div class="form-group">
+                    <label for="hospital-name">Hospital Name</label>
+                    <input type="text" id="hospital-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="hospital-address">Address</label>
+                    <input type="text" id="hospital-address" required>
+                </div>
+                <div class="form-group">
+                    <label for="hospital-camp-details">Camp Details</label>
+                    <textarea id="hospital-camp-details" rows="4" placeholder="Enter camp or service details"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Hospital Profile</button>
+            </form>
+            <div class="dashboard-section">
+                <h4>Assigned Patient Records</h4>
+                <div id="hospital-data-container" class="data-list">
+                    <div class="info-box">No patient records available yet.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Dashboard -->
+        <section class="section hidden" id="admin-dashboard">
+            <div class="dashboard-header">
+                <h3>Admin Portal</h3>
+                <button type="button" id="logout-button-admin" class="btn btn-secondary">Logout</button>
+            </div>
+            <div class="info-box">
+                Admin access provides a secure audit view of all submitted records and hashed approvals.
+            </div>
+            <div class="dashboard-section">
+                <h4>Blockchain Audit Records</h4>
+                <div id="admin-records-container" class="data-list">
+                    <div class="info-box">No audit records to display.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schemes Section -->
+        <section class="section hidden" id="schemes-section">
+            <h3>Available Health Schemes</h3>
+            <div id="schemes-container" class="schemes-grid">
+                <div class="loading">Loading schemes...</div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Healthink. Government Health Schemes Portal. Powered by Modern Technology.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
