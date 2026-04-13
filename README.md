@@ -304,11 +304,9 @@ This project served as a deep dive into modern web technologies:
 
 ## � Connect & Support
 
-**Project Author:** [Your Name]
-- 📧 **Email**: [your-email@example.com]
-- 💼 **LinkedIn**: [Your LinkedIn Profile]
+**Project Author:** [Kirti Sachdeva]
+- 📧 **Email**: [sachdevakirti637.com]
 - 🐙 **GitHub**: [https://github.com/123Kirti]
-- 📱 **Portfolio**: [Your Portfolio Website]
 
 ### 🐛 **Issues & Discussions**
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/123Kirti/Healthink/issues)
