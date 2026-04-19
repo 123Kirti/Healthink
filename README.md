@@ -1,6 +1,5 @@
 # 🏥 Healthink - Government Health Scheme Management System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.0.0-lightgrey.svg)](https://flask.palletsprojects.com/)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.0-363636.svg)](https://soliditylang.org/)
